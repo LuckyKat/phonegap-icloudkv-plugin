@@ -111,7 +111,7 @@
             NSDictionary    *changedKeys   = [[receivedNotification userInfo] valueForKey:NSUbiquitousKeyValueStoreChangedKeysKey];
 
             NSString *jsStatement = [NSString stringWithFormat:@"iCloudKV.didChanged(%@);", [NSJSONSerialization dataWithJSONObject:changedKeys options:NSJSONWritingPrettyPrinted error:nil]];
-            [self writeJavascript:jsStatement];
+            // [self writeJavascript:jsStatement];
             break;
     }
 }
